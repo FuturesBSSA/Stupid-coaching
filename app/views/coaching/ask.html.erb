@@ -1,0 +1,15 @@
+
+<div class="container" style="text-align: center;">
+
+<%= form_tag('/answer', method: 'post') do %>
+  <%= label_tag(:ask_question, "Speak to your coach")%>
+  <%= text_field_tag(:ask_question) %>
+  <%= submit_tag("Go on!") %>
+  <% end %>
+
+  <!-- <form action="/answer" method="post">
+    <label for="question">Speak to your coach</label>
+    <input type="text" id="question" name="ask_question" placeholder="what time is it?">
+    <input type="submit" value="Go on!">
+  </form> -->
+</div>
